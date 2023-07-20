@@ -14,6 +14,9 @@
 		2B643AB72A6906B3003CCAC7 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 2B643AB62A6906B3003CCAC7 /* ComposableArchitecture */; };
 		2B643ABF2A69089F003CCAC7 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B643ABE2A69089F003CCAC7 /* CustomButton.swift */; };
 		2B643AC22A690976003CCAC7 /* ButtonType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B643AC12A690976003CCAC7 /* ButtonType.swift */; };
+		2B643AC92A6923D4003CCAC7 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B643AC82A6923D4003CCAC7 /* CustomTextField.swift */; };
+		2B643ACC2A698D28003CCAC7 /* ButtonTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B643ACB2A698D28003CCAC7 /* ButtonTestView.swift */; };
+		2B643ACE2A698E68003CCAC7 /* TextFieldTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B643ACD2A698E68003CCAC7 /* TextFieldTestView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		2B643AAE2A690466003CCAC7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2B643ABE2A69089F003CCAC7 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		2B643AC12A690976003CCAC7 /* ButtonType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonType.swift; sourceTree = "<group>"; };
+		2B643AC82A6923D4003CCAC7 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		2B643ACB2A698D28003CCAC7 /* ButtonTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonTestView.swift; sourceTree = "<group>"; };
+		2B643ACD2A698E68003CCAC7 /* TextFieldTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldTestView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +91,8 @@
 		2B643AB92A690839003CCAC7 /* Feature */ = {
 			isa = PBXGroup;
 			children = (
+				2B643ACA2A698D0A003CCAC7 /* Button */,
+				2B643ACF2A698E6A003CCAC7 /* TextField */,
 			);
 			path = Feature;
 			sourceTree = "<group>";
@@ -117,6 +125,7 @@
 		2B643ABD2A690886003CCAC7 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				2B643AC72A69230E003CCAC7 /* TextField */,
 				2B643AC02A690962003CCAC7 /* Button */,
 			);
 			path = View;
@@ -129,6 +138,30 @@
 				2B643AC12A690976003CCAC7 /* ButtonType.swift */,
 			);
 			path = Button;
+			sourceTree = "<group>";
+		};
+		2B643AC72A69230E003CCAC7 /* TextField */ = {
+			isa = PBXGroup;
+			children = (
+				2B643AC82A6923D4003CCAC7 /* CustomTextField.swift */,
+			);
+			path = TextField;
+			sourceTree = "<group>";
+		};
+		2B643ACA2A698D0A003CCAC7 /* Button */ = {
+			isa = PBXGroup;
+			children = (
+				2B643ACB2A698D28003CCAC7 /* ButtonTestView.swift */,
+			);
+			path = Button;
+			sourceTree = "<group>";
+		};
+		2B643ACF2A698E6A003CCAC7 /* TextField */ = {
+			isa = PBXGroup;
+			children = (
+				2B643ACD2A698E68003CCAC7 /* TextFieldTestView.swift */,
+			);
+			path = TextField;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -211,6 +244,9 @@
 				2B643AC22A690976003CCAC7 /* ButtonType.swift in Sources */,
 				2B643AA82A690464003CCAC7 /* SwiftUIKitApp.swift in Sources */,
 				2B643ABF2A69089F003CCAC7 /* CustomButton.swift in Sources */,
+				2B643ACC2A698D28003CCAC7 /* ButtonTestView.swift in Sources */,
+				2B643AC92A6923D4003CCAC7 /* CustomTextField.swift in Sources */,
+				2B643ACE2A698E68003CCAC7 /* TextFieldTestView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
