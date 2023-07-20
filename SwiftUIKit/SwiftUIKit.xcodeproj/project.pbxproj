@@ -17,6 +17,10 @@
 		2B643AC92A6923D4003CCAC7 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B643AC82A6923D4003CCAC7 /* CustomTextField.swift */; };
 		2B643ACC2A698D28003CCAC7 /* ButtonTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B643ACB2A698D28003CCAC7 /* ButtonTestView.swift */; };
 		2B643ACE2A698E68003CCAC7 /* TextFieldTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B643ACD2A698E68003CCAC7 /* TextFieldTestView.swift */; };
+		2B643AD12A69919F003CCAC7 /* TextFieldType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B643AD02A69919F003CCAC7 /* TextFieldType.swift */; };
+		2B643AD32A699AD4003CCAC7 /* underlineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B643AD22A699AD4003CCAC7 /* underlineView.swift */; };
+		2B643AD62A69A0D8003CCAC7 /* hideKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B643AD52A69A0D8003CCAC7 /* hideKeyboard.swift */; };
+		2B643ADA2A69A1CA003CCAC7 /* TextFieldFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B643AD92A69A1CA003CCAC7 /* TextFieldFeature.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +34,10 @@
 		2B643AC82A6923D4003CCAC7 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		2B643ACB2A698D28003CCAC7 /* ButtonTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonTestView.swift; sourceTree = "<group>"; };
 		2B643ACD2A698E68003CCAC7 /* TextFieldTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldTestView.swift; sourceTree = "<group>"; };
+		2B643AD02A69919F003CCAC7 /* TextFieldType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldType.swift; sourceTree = "<group>"; };
+		2B643AD22A699AD4003CCAC7 /* underlineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = underlineView.swift; sourceTree = "<group>"; };
+		2B643AD52A69A0D8003CCAC7 /* hideKeyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hideKeyboard.swift; sourceTree = "<group>"; };
+		2B643AD92A69A1CA003CCAC7 /* TextFieldFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldFeature.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +73,7 @@
 			children = (
 				2B643ABB2A690853003CCAC7 /* Resources */,
 				2B643ABA2A69084A003CCAC7 /* Sources */,
+				2B643AD42A69A074003CCAC7 /* Utill */,
 				2B643AB92A690839003CCAC7 /* Feature */,
 				2B643AB82A690825003CCAC7 /* DesignSystem */,
 			);
@@ -118,6 +127,7 @@
 		2B643ABC2A690877003CCAC7 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				2B643AD22A699AD4003CCAC7 /* underlineView.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -144,6 +154,7 @@
 			isa = PBXGroup;
 			children = (
 				2B643AC82A6923D4003CCAC7 /* CustomTextField.swift */,
+				2B643AD02A69919F003CCAC7 /* TextFieldType.swift */,
 			);
 			path = TextField;
 			sourceTree = "<group>";
@@ -160,8 +171,17 @@
 			isa = PBXGroup;
 			children = (
 				2B643ACD2A698E68003CCAC7 /* TextFieldTestView.swift */,
+				2B643AD92A69A1CA003CCAC7 /* TextFieldFeature.swift */,
 			);
 			path = TextField;
+			sourceTree = "<group>";
+		};
+		2B643AD42A69A074003CCAC7 /* Utill */ = {
+			isa = PBXGroup;
+			children = (
+				2B643AD52A69A0D8003CCAC7 /* hideKeyboard.swift */,
+			);
+			path = Utill;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -240,12 +260,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B643ADA2A69A1CA003CCAC7 /* TextFieldFeature.swift in Sources */,
+				2B643AD62A69A0D8003CCAC7 /* hideKeyboard.swift in Sources */,
 				2B643AAA2A690464003CCAC7 /* ContentView.swift in Sources */,
+				2B643AD12A69919F003CCAC7 /* TextFieldType.swift in Sources */,
 				2B643AC22A690976003CCAC7 /* ButtonType.swift in Sources */,
 				2B643AA82A690464003CCAC7 /* SwiftUIKitApp.swift in Sources */,
 				2B643ABF2A69089F003CCAC7 /* CustomButton.swift in Sources */,
 				2B643ACC2A698D28003CCAC7 /* ButtonTestView.swift in Sources */,
 				2B643AC92A6923D4003CCAC7 /* CustomTextField.swift in Sources */,
+				2B643AD32A699AD4003CCAC7 /* underlineView.swift in Sources */,
 				2B643ACE2A698E68003CCAC7 /* TextFieldTestView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

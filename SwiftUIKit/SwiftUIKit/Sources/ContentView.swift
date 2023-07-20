@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import ComposableArchitecture
 
 struct ContentView: View {
     
@@ -22,7 +23,10 @@ struct ContentView: View {
                         Text("CustomButton")
                     }
                     
-                    NavigationLink(destination: TextFieldTestView()) {
+                    NavigationLink(destination: TextFieldTestView(
+                        store: Store(initialState: TextFieldFeature.State(),
+                                     reducer: TextFieldFeature())
+                    )) {
                         Text("CustomTextField")
                     }
                 }

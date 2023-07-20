@@ -26,7 +26,7 @@ struct CustomButton: View {
     var body: some View {
         Button {
             isTapped.toggle()
-            state = isTapped ? .disable : .enable
+            print("버튼 탭")
         } label: {
             switch type.title {
             case .text:
