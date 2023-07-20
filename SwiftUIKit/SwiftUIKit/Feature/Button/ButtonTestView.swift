@@ -8,26 +8,46 @@
 import SwiftUI
 
 struct ButtonTestView: View {
-    @State var state: ButtonState = .enable
-    @State var statetwo: ButtonState = .disable
+    @State var stateone: ButtonState = .disable
+    @State var statetwo: ButtonState = .enable
     @State var statethree: ButtonState = .enable
     @State var isTapped = false
     @State var isTappedtwo = true
     @State var isTappedThree = true
     @State var textfield = ""
+    @State var isPresented = false
     
     var body: some View {
         VStack(spacing: 20) {
-            Text("ButtonTest")
-                .font(.title)
+            Button("Toggle") {
+                stateone = (stateone == .disable) ? .enable : .disable
+            }
+            .buttonStyle(
+                CustomButtonStyle(
+                    type: ButtonType(size: .small, form: .round, title: .textWithIcon),
+                    state: $stateone)
+            )
             
-            CustomButton(type: ButtonType(size: .small, form: .round, title: .textWithIcon),
-                         isTapped: $isTappedtwo, state: $statetwo, title: "버튼 또 누르기")
+            NavigationLink(destination: TempView()) {
+                Text("NavigationLink")
+            }
+            .buttonStyle(
+                CustomButtonStyle(
+                type: ButtonType(size: .medium, form: .round, title: .text),
+                state: $statetwo)
+            )
             
-            CustomButton(type: ButtonType(size: .medium, form: .round, title: .text),
-                         isTapped: $isTappedThree, state: $statethree, title: "중간 버튼")
-            
-            CustomButton(isTapped: $isTapped, state: $state, title: "버튼 누르기")
+            Button("Present Sheet") {
+                isPresented.toggle()
+            }
+            .buttonStyle(
+                CustomButtonStyle(
+                    type: ButtonType(size: .large, form: .square, title: .text),
+                    state: $statethree)
+            )
+            .sheet(isPresented: $isPresented) {
+                TempView()
+            }
         }
         .padding()
     }
