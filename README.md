@@ -2,38 +2,42 @@
 
 
 ### ButtonStyle
-###### 추가 수정 예정⏳
-<img src="https://github.com/yangsubinn/SwiftUIKit/assets/81167570/4427bacb-cf16-4690-b1ee-e5e94a86eb90" width=300 />
+###### [Button📂](https://github.com/yangsubinn/SwiftUIKit/tree/master/SwiftUIKit/SwiftUIKit/DesignSystem/View/Button)
+<img src="https://github.com/yangsubinn/SwiftUIKit/assets/81167570/f473ba44-3edf-4324-9ac1-d283c21deaf9" width=300 />
 
-[Button📂](https://github.com/yangsubinn/SwiftUIKit/tree/master/SwiftUIKit/SwiftUIKit/DesignSystem/View/Button)
+1️⃣ CustomButton
+- type: ButtonType 사용해서 지정 (default: large, square)
 
 ```
 @State var buttonState: ButtonState = .disable
 
-/// 1️⃣ 기본 버튼 (large, square)
-Button("기본 버튼") {
-	// 수행할 액션
-}
-.buttonStyle(CustomButtonStyle(state: $buttonState))
+CustomButton(action: {
+    // 수행할 액션
+}, label: {
+    Text("CustomButton (default)")
+}, state: $buttonState)
 
-/// 2️⃣ 커스텀 버튼 (small, round)
-Button("커스텀 버튼 s") {
-	// 수행할 액션
+
+CustomButton(action: {
+    // 수행할 액션
+}, label: {
+    Text("CustomButton (small, round)")
+}, state: $buttonState,
+	type: ButtonType(size: .small, shape: .round)) // 원하는 타입 지정
+
+```
+
+2️⃣ CustomButtonStyle
+- NavigationLink와 같이 간접적으로 생성되는 버튼에 사용
+- CustButtonStyle 사용하여 type과 state 추가 후 buttonStyle 지정
+```
+NavigationLink(destination: TempView()) {
+    Text("CusomButtonStyle (medium, round)")
 }
 .buttonStyle(
-		CustomButtonStyle(
-			type: ButtonType(size: .small, shape: .round), 
-			state: $buttonState)
-)
-
-/// 3️⃣ 커스텀 버튼 (medium, round)
-Button("커스텀 버튼 m") {
-	// 수행할 액션
-}
-.buttonStyle(
-		CustomButtonStyle(
-			type: ButtonType(size: .medium, shape: .round), 
-			state: $buttonState)
+    CustomButtonStyle(
+    type: ButtonType(size: .medium, shape: .square),
+    state: $statethree)
 )
 
 ```
@@ -42,9 +46,9 @@ Button("커스텀 버튼 m") {
 
 
 ### TextField
-![ezgif com-resize (5)](https://github.com/yangsubinn/SwiftUIKit/assets/81167570/143fb923-8a41-4ab7-ae6f-004e50432f9f)
+###### [TextField📂](https://github.com/yangsubinn/SwiftUIKit/tree/master/SwiftUIKit/SwiftUIKit/DesignSystem/View/TextField)
 
-[TextField📂](https://github.com/yangsubinn/SwiftUIKit/tree/master/SwiftUIKit/SwiftUIKit/DesignSystem/View/TextField)
+![ezgif com-resize (5)](https://github.com/yangsubinn/SwiftUIKit/assets/81167570/143fb923-8a41-4ab7-ae6f-004e50432f9f)
 
 
 ```
