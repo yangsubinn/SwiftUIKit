@@ -7,6 +7,8 @@
 
 import Foundation
 
+/// BottomSheet의 높이에 따른 BottomSheetType
+/// - 추후 디자인에 따라 수정 예정
 enum BottomSheetType {
     case small
     case medium

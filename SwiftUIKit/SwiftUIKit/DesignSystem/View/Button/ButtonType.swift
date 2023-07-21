@@ -8,6 +8,7 @@
 import Foundation
 import SwiftUI
 
+/// 버튼 크기
 enum ButtonSize {
     case small
     case medium
@@ -25,6 +26,7 @@ enum ButtonSize {
     }
 }
 
+/// 버튼 형태
 enum ButtonShape {
     case square
     case round
@@ -39,6 +41,7 @@ enum ButtonShape {
     }
 }
 
+/// 버튼 상태
 enum ButtonState {
     case disable
     case enable

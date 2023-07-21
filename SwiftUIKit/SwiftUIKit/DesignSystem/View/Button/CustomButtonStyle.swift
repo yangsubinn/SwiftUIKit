@@ -7,7 +7,6 @@
 
 import SwiftUI
 
-
 struct CustomButtonStyle: ButtonStyle {
     private var type: ButtonType
     @Binding var state: ButtonState
