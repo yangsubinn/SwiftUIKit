@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct CustomTextField: View {
-//    @State var textfield: String = ""
     @Binding var textfield: String
     private var placeholder: String
     private var type: TextFieldType

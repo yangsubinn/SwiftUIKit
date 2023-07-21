@@ -22,6 +22,7 @@
 		2B643AD62A69A0D8003CCAC7 /* hideKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B643AD52A69A0D8003CCAC7 /* hideKeyboard.swift */; };
 		2B643ADA2A69A1CA003CCAC7 /* TextFieldFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B643AD92A69A1CA003CCAC7 /* TextFieldFeature.swift */; };
 		2B643ADF2A69B66E003CCAC7 /* TempView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B643ADE2A69B66E003CCAC7 /* TempView.swift */; };
+		2BD5D5312A6A4DF00070C196 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD5D5302A6A4DF00070C196 /* CustomButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		2B643AD52A69A0D8003CCAC7 /* hideKeyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hideKeyboard.swift; sourceTree = "<group>"; };
 		2B643AD92A69A1CA003CCAC7 /* TextFieldFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldFeature.swift; sourceTree = "<group>"; };
 		2B643ADE2A69B66E003CCAC7 /* TempView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempView.swift; sourceTree = "<group>"; };
+		2BD5D5302A6A4DF00070C196 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +151,7 @@
 			children = (
 				2B643ABE2A69089F003CCAC7 /* CustomButtonStyle.swift */,
 				2B643AC12A690976003CCAC7 /* ButtonType.swift */,
+				2BD5D5302A6A4DF00070C196 /* CustomButton.swift */,
 			);
 			path = Button;
 			sourceTree = "<group>";
@@ -271,6 +274,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2BD5D5312A6A4DF00070C196 /* CustomButton.swift in Sources */,
 				2B643ADA2A69A1CA003CCAC7 /* TextFieldFeature.swift in Sources */,
 				2B643AD62A69A0D8003CCAC7 /* hideKeyboard.swift in Sources */,
 				2B643AAA2A690464003CCAC7 /* ContentView.swift in Sources */,

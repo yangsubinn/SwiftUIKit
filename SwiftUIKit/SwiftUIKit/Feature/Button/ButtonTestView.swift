@@ -8,46 +8,40 @@
 import SwiftUI
 
 struct ButtonTestView: View {
-    @State var stateone: ButtonState = .disable
-    @State var statetwo: ButtonState = .enable
+    @State var stateone: ButtonState = .enable
+    @State var statetwo: ButtonState = .disable
     @State var statethree: ButtonState = .enable
-    @State var isTapped = false
-    @State var isTappedtwo = true
-    @State var isTappedThree = true
-    @State var textfield = ""
     @State var isPresented = false
     
     var body: some View {
         VStack(spacing: 20) {
-            Button("Toggle") {
-                stateone = (stateone == .disable) ? .enable : .disable
-            }
-            .buttonStyle(
-                CustomButtonStyle(
-                    type: ButtonType(size: .small, form: .round, title: .textWithIcon),
-                    state: $stateone)
-            )
             
-            NavigationLink(destination: TempView()) {
-                Text("NavigationLink")
-            }
-            .buttonStyle(
-                CustomButtonStyle(
-                type: ButtonType(size: .medium, form: .round, title: .text),
-                state: $statetwo)
-            )
-            
-            Button("Present Sheet") {
+            /// 기본 버튼
+            CustomButton(action: {
                 isPresented.toggle()
-            }
-            .buttonStyle(
-                CustomButtonStyle(
-                    type: ButtonType(size: .large, form: .square, title: .text),
-                    state: $statethree)
-            )
+            }, label: {
+                Text("CustomButton (default)")
+            }, state: $stateone)
             .sheet(isPresented: $isPresented) {
                 TempView()
             }
+            
+            /// small, round
+            CustomButton(action: {
+                statetwo = (statetwo == .disable) ? .enable : .disable
+            }, label: {
+                Text("CustomButton (small, round)")
+            }, state: $statetwo, type: ButtonType(size: .small, shape: .round))
+            
+            /// medium, round
+            NavigationLink(destination: TempView()) {
+                Text("CusomButtonStyle (medium, round)")
+            }
+            .buttonStyle(
+                CustomButtonStyle(
+                type: ButtonType(size: .medium, shape: .square),
+                state: $statethree)
+            )
         }
         .padding()
     }

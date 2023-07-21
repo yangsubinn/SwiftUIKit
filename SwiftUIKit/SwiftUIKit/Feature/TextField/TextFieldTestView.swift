@@ -31,10 +31,11 @@ struct TextFieldTestView: View {
                     CustomTextField(textfield: $hobbyTextField, placeholder: "취미를 입력해주세요", type: .title("취미 정보"), buttonType: .other("checkmark"))
                         .padding()
                     
-                    Button("입력하면 활성화") {
-                        print("탭탭탭")
-                    }
-                    .buttonStyle(CustomButtonStyle(state: $buttonState))
+                    CustomButton(action: {
+                        print("탭")
+                    }, label: {
+                        Text("입력하면 활성화")
+                    }, state: $buttonState)
                 }
             }
             .onChange(of: [self.nameTextField, self.hobbyTextField], perform: { newValue in

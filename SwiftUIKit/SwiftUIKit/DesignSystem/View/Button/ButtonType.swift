@@ -25,35 +25,44 @@ enum ButtonSize {
     }
 }
 
-enum ButtonForm {
+enum ButtonShape {
     case square
     case round
-}
-
-enum ButtonTitle {
-    case text
-    case textWithIcon
+    
+    var radius: CGFloat {
+        switch self {
+        case .square:
+            return 6
+        case .round:
+            return 30
+        }
+    }
 }
 
 enum ButtonState {
     case disable
     case enable
-    case highlighted
     
-    var color: Color {
+    var bgColor: Color {
         switch self {
         case .disable:
             return .gray
         case .enable:
             return .yellow
-        case .highlighted:
-            return .yellow.opacity(0.6)
+        }
+    }
+    
+    var fgColor: Color {
+        switch self {
+        case .disable:
+            return .white
+        case .enable:
+            return .black
         }
     }
 }
 
 struct ButtonType {
     var size: ButtonSize
-    var form: ButtonForm
-    var title: ButtonTitle
+    var shape: ButtonShape
 }
