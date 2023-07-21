@@ -104,6 +104,7 @@
 		2B643AB92A690839003CCAC7 /* Feature */ = {
 			isa = PBXGroup;
 			children = (
+				2B643ADD2A69B65C003CCAC7 /* TempView */,
 				2B643ACA2A698D0A003CCAC7 /* Button */,
 				2B643ACF2A698E6A003CCAC7 /* TextField */,
 			);
@@ -139,7 +140,6 @@
 		2B643ABD2A690886003CCAC7 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				2B643ADD2A69B65C003CCAC7 /* TempView */,
 				2B643AC72A69230E003CCAC7 /* TextField */,
 				2B643AC02A690962003CCAC7 /* Button */,
 			);
