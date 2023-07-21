@@ -14,12 +14,8 @@ struct BottomSheet<Content: View>: View {
     private let content: () -> Content
     private let screenSize: CGRect = UIScreen.main.bounds
     private var type: BottomSheetType
-    private var heightRadio: CGFloat {
-        type.heightRadio
-    }
-    
     private var offset: CGFloat {
-        isShowing ? 0 : screenSize.height / heightRadio
+        isShowing ? 0 : screenSize.height / type.heightRadio
     }
     
     init(isShowing: Binding<Bool>,
@@ -55,8 +51,7 @@ struct BottomSheet<Content: View>: View {
                 Spacer()
             }
             .frame(width: screenSize.width,
-                   height: screenSize.height / heightRadio,
-                   alignment: .center)
+                   height: screenSize.height / type.heightRadio)
             .modifier(BottomSheetModifier())
             .offset(y: offset)
             .transition(AnyTransition.move(edge: .bottom))
