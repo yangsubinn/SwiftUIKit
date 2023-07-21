@@ -29,6 +29,10 @@ struct ContentView: View {
                     )) {
                         Text("CustomTextField")
                     }
+                    
+                    NavigationLink(destination: BottomSheetTestView()) {
+                        Text("BottomSheet")
+                    }
                 }
             }
             .padding()

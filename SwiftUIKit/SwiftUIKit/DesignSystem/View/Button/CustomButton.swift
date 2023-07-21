@@ -16,7 +16,7 @@ struct CustomButton<Label: View>: View {
     @State private var pressed: Bool = false
     
     init(action: @escaping () -> (),
-         label: @escaping () -> Label,
+         @ViewBuilder label: @escaping () -> Label,
          state: Binding<ButtonState>,
          type: ButtonType = ButtonType(size: .large, shape: .square)) {
         self.action = action
@@ -27,8 +27,10 @@ struct CustomButton<Label: View>: View {
     
     var body: some View {
         Button(action: action) {
-            label()
-                .allowsHitTesting(false)
+            HStack {
+                label()
+            }
+            .allowsHitTesting(false)
         }
         .buttonStyle(CustomButtonStyle(type: type, state: $state))
     }
