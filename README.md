@@ -42,9 +42,6 @@ NavigationLink(destination: TempView()) {
 
 ```
 
-
-
-
 ### TextField
 ###### [TextField📂](https://github.com/yangsubinn/SwiftUIKit/tree/master/SwiftUIKit/SwiftUIKit/DesignSystem/View/TextField)
 
@@ -70,5 +67,18 @@ CustomTextField(
 	buttonType: .other("checkmark") // 선택 (default: .delete)
 )
 .padding()
+```
+
+### BottomSheet
+###### [BottomSheet📂](https://github.com/yangsubinn/SwiftUIKit/tree/master/SwiftUIKit/SwiftUIKit/DesignSystem/View/BottomSheet)
+
+![ezgif com-resize (6)](https://github.com/yangsubinn/SwiftUIKit/assets/81167570/b7c987b9-c0d2-4af8-b0bf-96709f87cac2)
+
+
+```
+BottomSheet(isShowing: $isShowing, type: .medium, content: {
+	// BottomSheet에 들어갈 컨텐츠 작성
+})
+.edgesIgnoringSafeArea(.all)
 ```
 
