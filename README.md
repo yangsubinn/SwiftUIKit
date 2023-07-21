@@ -72,7 +72,7 @@ CustomTextField(
 ### BottomSheet
 ###### [BottomSheet📂](https://github.com/yangsubinn/SwiftUIKit/tree/master/SwiftUIKit/SwiftUIKit/DesignSystem/View/BottomSheet)
 
-![ezgif com-resize (6)](https://github.com/yangsubinn/SwiftUIKit/assets/81167570/b7c987b9-c0d2-4af8-b0bf-96709f87cac2)
+![ezgif com-resize (7)](https://github.com/yangsubinn/SwiftUIKit/assets/81167570/b771647c-1911-4ffe-930f-d1e3a289a5b6)
 
 
 ```
