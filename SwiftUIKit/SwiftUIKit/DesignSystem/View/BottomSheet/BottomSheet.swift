@@ -28,13 +28,7 @@ struct BottomSheet<Content: View>: View {
     
     var body: some View {
         ZStack(alignment: .bottom) {
-            Color.black
-                .opacity(isShowing ? 0.2 : 0)
-                .onTapGesture {
-                    withAnimation(.easeInOut(duration: 0.1)) {
-                        isShowing.toggle()
-                    }
-                }
+            BackgroundDimmerView(isPresented: $isShowing)
             
             VStack {
                 Rectangle()
