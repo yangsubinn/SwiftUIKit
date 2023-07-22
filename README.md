@@ -3,7 +3,9 @@
 
 ### ButtonStyle
 ###### [Button📂](https://github.com/yangsubinn/SwiftUIKit/tree/master/SwiftUIKit/SwiftUIKit/DesignSystem/View/Button)
-<img src="https://github.com/yangsubinn/SwiftUIKit/assets/81167570/f473ba44-3edf-4324-9ac1-d283c21deaf9" width=300 />
+
+<img src="https://github.com/yangsubinn/SwiftUIKit/assets/81167570/d880a21b-2f11-4a33-a051-cb4efe728499" width=300 />
+
 
 1️⃣ CustomButton
 - type: ButtonType 사용해서 지정 (default: large, square)
@@ -45,7 +47,9 @@ NavigationLink(destination: TempView()) {
 ### TextField
 ###### [TextField📂](https://github.com/yangsubinn/SwiftUIKit/tree/master/SwiftUIKit/SwiftUIKit/DesignSystem/View/TextField)
 
-![ezgif com-resize (5)](https://github.com/yangsubinn/SwiftUIKit/assets/81167570/143fb923-8a41-4ab7-ae6f-004e50432f9f)
+
+![ezgif com-resize (5)](https://github.com/yangsubinn/SwiftUIKit/assets/81167570/0d8a0323-8f9f-4289-93d4-a5415afe2a6f)
+
 
 
 ```
@@ -72,7 +76,7 @@ CustomTextField(
 ### BottomSheet
 ###### [BottomSheet📂](https://github.com/yangsubinn/SwiftUIKit/tree/master/SwiftUIKit/SwiftUIKit/DesignSystem/View/BottomSheet)
 
-![ezgif com-resize (7)](https://github.com/yangsubinn/SwiftUIKit/assets/81167570/b771647c-1911-4ffe-930f-d1e3a289a5b6)
+![ezgif com-resize (7)](https://github.com/yangsubinn/SwiftUIKit/assets/81167570/e8dfb7fd-c9c0-4f6a-bad0-04cbdc4fd60a)
 
 
 ```
