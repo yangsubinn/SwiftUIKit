@@ -105,3 +105,26 @@ Button {
     .presentationDragIndicator(.visible)
 }
 ```
+
+### Alert
+###### [Alert📂](https://github.com/yangsubinn/SwiftUIKit/tree/master/SwiftUIKit/SwiftUIKit/DesignSystem/View/Alert)
+
+![ezgif com-resize (8)](https://github.com/yangsubinn/SwiftUIKit/assets/81167570/bfc29d89-dbbe-4cf7-a275-c2b37c24261c)
+
+
+```
+@State private var isPresented: Bool = false
+@State private var alertButtonTapped: Bool = false
+
+CustomAlert(isPresented: $isPresented,
+            title: "타이틀만 있는 alert",
+            rightButtonAction: $alertButtonTapped)
+
+CustomAlert(isPresented: $isPresented,
+            title: "둘다 있는 alert",
+            description: "타이틀도 있고 설명도 있는 alert입니다.\n 안녕하세용 반갑습니당",
+            rightButtonAction: $alertButtonTapped)
+```
+
+
+
