@@ -78,7 +78,7 @@ CustomTextField(
 
 ![ezgif com-resize (7)](https://github.com/yangsubinn/SwiftUIKit/assets/81167570/e8dfb7fd-c9c0-4f6a-bad0-04cbdc4fd60a)
 
-
+1️⃣ Custom BottomSheet
 ```
 BottomSheet(isShowing: $isShowing, type: .medium, content: {
 	// BottomSheet에 들어갈 컨텐츠 작성
@@ -86,3 +86,22 @@ BottomSheet(isShowing: $isShowing, type: .medium, content: {
 .edgesIgnoringSafeArea(.all)
 ```
 
+2️⃣ presentationDetents 사용한 BottomSheet 예시
+```
+@State var isPresented: Bool = false
+    
+Button {
+    // 버튼 액션
+    isPresented.toggle()
+} label: {
+    // 버튼 타이틀
+}
+.sheet(isPresented: $isPresented) {
+    VStack(spacing: 20) {
+        // BottomSheet 컨텐츠
+    }
+    .padding(EdgeInsets(top: 20, leading: 0, bottom: 20, trailing: 0))
+    .presentationDetents([.fraction(0.5), .fraction(0.2)]) // fraction, 기본 detent(.large, .medium), height 등 사용하여 드래그 가능한 높이 설정 가능
+    .presentationDragIndicator(.visible)
+}
+```
