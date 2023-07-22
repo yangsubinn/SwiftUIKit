@@ -27,6 +27,7 @@
 		2BD5D5372A6A505B0070C196 /* BottomSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD5D5362A6A505B0070C196 /* BottomSheet.swift */; };
 		2BD5D5392A6A55330070C196 /* BottomSheetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD5D5382A6A55330070C196 /* BottomSheetType.swift */; };
 		2BD5D53B2A6A58990070C196 /* cornerRadius.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD5D53A2A6A58990070C196 /* cornerRadius.swift */; };
+		2BD5D53F2A6BADC10070C196 /* SheetTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD5D53E2A6BADC10070C196 /* SheetTestView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,7 @@
 		2BD5D5362A6A505B0070C196 /* BottomSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheet.swift; sourceTree = "<group>"; };
 		2BD5D5382A6A55330070C196 /* BottomSheetType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetType.swift; sourceTree = "<group>"; };
 		2BD5D53A2A6A58990070C196 /* cornerRadius.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cornerRadius.swift; sourceTree = "<group>"; };
+		2BD5D53E2A6BADC10070C196 /* SheetTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetTestView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -213,6 +215,7 @@
 			isa = PBXGroup;
 			children = (
 				2BD5D5332A6A4F350070C196 /* BottomSheetTestView.swift */,
+				2BD5D53E2A6BADC10070C196 /* SheetTestView.swift */,
 			);
 			path = BottomSheet;
 			sourceTree = "<group>";
@@ -306,6 +309,7 @@
 				2BD5D5312A6A4DF00070C196 /* CustomButton.swift in Sources */,
 				2BD5D5372A6A505B0070C196 /* BottomSheet.swift in Sources */,
 				2B643ADA2A69A1CA003CCAC7 /* TextFieldFeature.swift in Sources */,
+				2BD5D53F2A6BADC10070C196 /* SheetTestView.swift in Sources */,
 				2B643AD62A69A0D8003CCAC7 /* hideKeyboard.swift in Sources */,
 				2B643AAA2A690464003CCAC7 /* ContentView.swift in Sources */,
 				2B643AD12A69919F003CCAC7 /* TextFieldType.swift in Sources */,
