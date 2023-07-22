@@ -28,6 +28,9 @@
 		2BD5D5392A6A55330070C196 /* BottomSheetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD5D5382A6A55330070C196 /* BottomSheetType.swift */; };
 		2BD5D53B2A6A58990070C196 /* cornerRadius.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD5D53A2A6A58990070C196 /* cornerRadius.swift */; };
 		2BD5D53F2A6BADC10070C196 /* SheetTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD5D53E2A6BADC10070C196 /* SheetTestView.swift */; };
+		2BD5D5452A6BBC150070C196 /* AlertTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD5D5442A6BBC150070C196 /* AlertTestView.swift */; };
+		2BD5D5472A6BC9DB0070C196 /* BackgroundDimmerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD5D5462A6BC9DB0070C196 /* BackgroundDimmerView.swift */; };
+		2BD5D5492A6BCBB30070C196 /* CustomAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD5D5482A6BCBB30070C196 /* CustomAlert.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +55,9 @@
 		2BD5D5382A6A55330070C196 /* BottomSheetType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetType.swift; sourceTree = "<group>"; };
 		2BD5D53A2A6A58990070C196 /* cornerRadius.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cornerRadius.swift; sourceTree = "<group>"; };
 		2BD5D53E2A6BADC10070C196 /* SheetTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetTestView.swift; sourceTree = "<group>"; };
+		2BD5D5442A6BBC150070C196 /* AlertTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertTestView.swift; sourceTree = "<group>"; };
+		2BD5D5462A6BC9DB0070C196 /* BackgroundDimmerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundDimmerView.swift; sourceTree = "<group>"; };
+		2BD5D5482A6BCBB30070C196 /* CustomAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlert.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +120,7 @@
 		2B643AB92A690839003CCAC7 /* Feature */ = {
 			isa = PBXGroup;
 			children = (
+				2BD5D5422A6BBC050070C196 /* Alert */,
 				2B643ADD2A69B65C003CCAC7 /* TempView */,
 				2BD5D5322A6A4F200070C196 /* BottomSheet */,
 				2B643ACA2A698D0A003CCAC7 /* Button */,
@@ -144,6 +151,7 @@
 			isa = PBXGroup;
 			children = (
 				2B643AD22A699AD4003CCAC7 /* underlineView.swift */,
+				2BD5D5462A6BC9DB0070C196 /* BackgroundDimmerView.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -151,6 +159,7 @@
 		2B643ABD2A690886003CCAC7 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				2BD5D5432A6BBC0C0070C196 /* Alert */,
 				2BD5D5352A6A50210070C196 /* BottomSheet */,
 				2B643AC72A69230E003CCAC7 /* TextField */,
 				2B643AC02A690962003CCAC7 /* Button */,
@@ -227,6 +236,22 @@
 				2BD5D5382A6A55330070C196 /* BottomSheetType.swift */,
 			);
 			path = BottomSheet;
+			sourceTree = "<group>";
+		};
+		2BD5D5422A6BBC050070C196 /* Alert */ = {
+			isa = PBXGroup;
+			children = (
+				2BD5D5442A6BBC150070C196 /* AlertTestView.swift */,
+			);
+			path = Alert;
+			sourceTree = "<group>";
+		};
+		2BD5D5432A6BBC0C0070C196 /* Alert */ = {
+			isa = PBXGroup;
+			children = (
+				2BD5D5482A6BCBB30070C196 /* CustomAlert.swift */,
+			);
+			path = Alert;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -311,11 +336,14 @@
 				2B643ADA2A69A1CA003CCAC7 /* TextFieldFeature.swift in Sources */,
 				2BD5D53F2A6BADC10070C196 /* SheetTestView.swift in Sources */,
 				2B643AD62A69A0D8003CCAC7 /* hideKeyboard.swift in Sources */,
+				2BD5D5492A6BCBB30070C196 /* CustomAlert.swift in Sources */,
+				2BD5D5472A6BC9DB0070C196 /* BackgroundDimmerView.swift in Sources */,
 				2B643AAA2A690464003CCAC7 /* ContentView.swift in Sources */,
 				2B643AD12A69919F003CCAC7 /* TextFieldType.swift in Sources */,
 				2BD5D5342A6A4F350070C196 /* BottomSheetTestView.swift in Sources */,
 				2B643AC22A690976003CCAC7 /* ButtonType.swift in Sources */,
 				2B643AA82A690464003CCAC7 /* SwiftUIKitApp.swift in Sources */,
+				2BD5D5452A6BBC150070C196 /* AlertTestView.swift in Sources */,
 				2B643ADF2A69B66E003CCAC7 /* TempView.swift in Sources */,
 				2B643ABF2A69089F003CCAC7 /* CustomButtonStyle.swift in Sources */,
 				2BD5D53B2A6A58990070C196 /* cornerRadius.swift in Sources */,

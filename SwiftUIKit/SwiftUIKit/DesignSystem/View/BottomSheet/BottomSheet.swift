@@ -9,7 +9,6 @@ import SwiftUI
 
 struct BottomSheet<Content: View>: View {
     @Binding private var isShowing: Bool
-    @State private var dimmerAnimate = false
     
     private let content: () -> Content
     private let screenSize: CGRect = UIScreen.main.bounds

@@ -33,6 +33,10 @@ struct ContentView: View {
                     NavigationLink(destination: BottomSheetTestView()) {
                         Text("BottomSheet")
                     }
+                    
+                    NavigationLink(destination: AlertTestView()) {
+                        Text("Alert")
+                    }
                 }
             }
             .padding()

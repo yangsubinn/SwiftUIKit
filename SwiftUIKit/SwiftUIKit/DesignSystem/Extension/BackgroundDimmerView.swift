@@ -17,10 +17,11 @@ struct BackgroundDimmerView: View {
     var body: some View {
         Color.black
             .opacity(isPresented ? 0.2 : 0)
+            .edgesIgnoringSafeArea(.all)
+            .transition(.opacity.animation(.easeInOut))
+            .animation(.easeInOut(duration: 0.2), value: self.isPresented)
             .onTapGesture {
-                withAnimation(.easeInOut(duration: 0.1)) {
-                    isPresented.toggle()
-                }
+                isPresented.toggle()
             }
     }
 }
